@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamestalgic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/94e4fe28b7.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      </script>
+      <script>
+        $('.carousel').carousel({
+          interval: 2000
+        })
+      </script>
+    </head>
+    <body>
+    <nav class="social-menu navbar navbar-expand-sm navbar-dark justify-content-end px-4 d-none d-sm-flex">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="" data-toggle="tooltip" title="Visítanos!"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" data-toggle="tooltip" title="Visítanos!"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" data-toggle="tooltip" title="Visítanos!"><i class="fab fa-telegram-plane"></i></a>
+            </li>    
+          </ul>
+    </nav>
+    <nav class="nav-menu navbar navbar-expand-sm navbar-dark p-3 sticky-top">
+        <a class="logo navbar-brand" href="#">Gamestalgic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reseñas</a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#">Foros</a>
+            </li> 
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login">Ingresar</a>
+          </li>  
+          </ul>
+          <form class="d-flex buscar">
+            <input class="form-control" type="text" placeholder="Buscar noticias y más...">
+            <button class="btn bg-light btn-search" type="button">
+                <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <a href="" class="loggin-icon d-none d-sm-block" data-toggle="modal" data-target="#modal-login"><i class="fas fa-user"></i></a>
+        </div>  
+      </nav>
+     <!-- The Modal -->
+      <div class="modal fade" id="modal-login">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Login de usuario</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+             <!-- Modal body -->
+            <div class="modal-body px-4 py-4">
+              <form action="/action_page.php" class="was-validated">
+                <div class="form-group mb-4">
+                  <label for="uname">Ingrese usuario:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+                  <div class="valid-feedback">Datos válidos. <i class="fas fa-thumbs-up"></i></div>
+                  <div class="invalid-feedback">Por favor ingrese sus datos. <i class="fas fa-exclamation-triangle"></i></div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="pwd">Ingrese contraseña:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" required>
+                  <div class="valid-feedback">Datos válidos. <i class="fas fa-thumbs-up"></i></div>
+                  <div class="invalid-feedback">Por favor ingrese sus datos. <i class="fas fa-exclamation-triangle"></i></div>
+                </div>
+                <button type="submit" class="btn btn-login btn-primary btn-block">Start</button>
+              </form>
+            </div>
+             <!-- Modal footer -->
+            <div class="modal-footer">
+              <!--button type="button" class="btn btn-danger" data-dismiss="modal">Close</button-->
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--MAIN CONTAINER-->
+      <div class="container" style="margin-top:30px; max-width: 900px;">
+        <div class="row py-4">
+          <div class="col-lg-12">
+            <h1 class="news-title">La actualización en línea de Super Mario Party finalmente agrega más modos en línea</h1>
+            <h6>Editorial: Gaming / Nintendo / Twitter / Mario Party / Nintendo Switch</h6>
+          </div>
+          <!--BANNER NOTICIA-->
+          <div class="col-lg-12">
+           <div class="col-lg-12 banner-noticia mb-4">
+           </div>
+          </div>  
+          <div class="col-lg-12">
+            <h6>Por Eddie Makuch 27 de abril de 2021 a las 8:33 a.m.</h6>
+          </div>
+          <div class="col-lg-12 py-4">
+            <p>Super Mario Party de Nintendo, que se lanzó originalmente en 2018, todavía recibe soporte. 
+              Nintendo ha anunciado que el juego en línea ampliado ya está disponible en el juego a través de una actualización.<br><br>
+
+              La actualización gratuita te permite jugar "docenas" de minijuegos en línea, mientras que los modos Mario Party y 
+              Partner Party también están disponibles ahora con el juego en línea. Puedes ver un breve avance de la actualización 
+              del juego en línea a continuación. Tenga en cuenta que necesita una suscripción a Nintendo Switch Online para jugar 
+              los modos en línea.<br><br>
+              
+              Super Mario Party ya tenía algunas funciones en línea, ya que el modo Mariothon en línea ha estado disponible desde su
+               lanzamiento. Esto te permite participar en minijuegos decididos al azar.<br><br>
+
+              70 de los 80 minijuegos del juego están disponibles para jugar en línea con la nueva actualización.
+              Puede ver una lista de los minijuegos que no son compatibles a continuación como parte de las notas 
+              del parche compartidas por Nintendo.<br><br>
+
+              Super Mario Party es uno de los juegos más exitosos de Switch. Al 31 de diciembre de 2020, había vendido 13,82 millones
+               de copias para convertirlo en el séptimo juego de Switch más vendido de la historia.<br><br>
+
+              "Lo último de Nintendo ofrece algunos modos nuevos, cada uno de los cuales agrega su propio toque creativo a la
+               fórmula probada y verdadera", dijo el crítico Jordan Ramee en la revisión de Super Mario Party de GameSpot.
+              "En muchos sentidos, Super Mario Party se siente más pequeño que los juegos anteriores de la serie, pero las 
+              capas adicionales de estrategia y los minijuegos divertidos e inteligentes ayudan a mantenerlo vivo y fresco".
+              Notas del parche del juego en línea del 27 de abril de Super Mario Party:
+              </p><br><br>
+            
+              <h3>Notas del parche del juego en línea del 27 de abril de Super Mario Party:</h3>
+              <h5>Ver. 1.1.0 (publicado el 27 de abril de 2021)</h5><br>
+              <p>
+              Característica agregada
+
+              Ahora puede jugar los siguientes modos a través de Internet:
+              Mario Party
+              Fiesta de socios
+              Juego libre (minijuegos)
+              Importante: para jugar a través de Internet, se requiere una suscripción al servicio de pago Nintendo Switch Online.
+
+              Jugando por internet
+
+              Para jugar a través de Internet, seleccione Mario Party, Partner Party o Minijuegos, luego seleccione Juego en línea.<br>
+              Hay dos formas de jugar a través de Internet: Friend Match, donde puedes jugar con amigos, y Private Game, donde puedes jugar con cualquier persona que use contraseñas.
+              Las combinaciones a través de las cuales puedes jugar a través de Internet son las siguientes:<br><br>
+              Hasta 1 jugador por sistema (puedes jugar con entre 2 y 4 jugadores)
+              Hasta 2 jugadores por sistema (puedes jugar con entre 3 y 4 jugadores)<br><br>
+              Si dos jugadores juegan cada uno en sus propios sistemas, no pueden jugar con dos jugadores usando un tercer sistema.
+              Jugar a través de Internet es compatible con la función Invitar amigo. Si seleccionas Invitar amigo en la pantalla en la que estás esperando rivales,
+              tus amigos seleccionados pueden unirse desde las Invitaciones de juego en línea en su ícono de página de usuario en la parte superior izquierda del menú HOME.
+              Online Mariothon no admite la función Invitar amigo.<br><br>
+              Cuando juegas a través de Internet, los 20 personajes y todos los mapas están disponibles, independientemente de tu progreso actual en el juego.
+              Al jugar a través de Internet, 70 de los 80 minijuegos totales están disponibles para jugar.
+              Los siguientes 10 minijuegos no están disponibles cuando se juega a través de Internet.
+              Hágalo rico
+              Hora de brillar
+              Tomar una puñalada
+              Swingers Estrellas
+              Ritmo y moretones
+              Pep Rally
+              Borrado
+              Violinista en el casco
+              Limpiando la mesa
+              Baton y encendido
+              Los datos de reproducción no se guardarán al jugar a través de Internet.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+          <div class="col-lg-12 mb-3">
+            <h4>Seguir leyendo</h4>
+          </div>
+          <div class="col-lg-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <!--li data-target="#carouselExampleIndicators" data-slide-to="2"></li-->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/17.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">NEW WORLD</h5>
+                          <p class="card-text">Este título es una MMO que te sitúa en el siglo XVII y te permite explorar vastas regiones agrestes y hostiles con el objetivo de colonizarlas. </p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/14.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">Arcane llega a Netflix!</h5>
+                          <p class="card-text">Arcane es una serie de televisión animada franco-estadounidense de aventuras, drama y comedia, ​ ambientada...</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/13.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">Volver al futuro</h5>
+                          <p class="card-text">Volver al Futuro es una de esas películas que aparentemente nadie quiere que tengan un reinicio, remake y secuela.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/12.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">Cobra Kai EP2.T1</h5>
+                          <p class="card-text">William Zabka y Ralph Macchio retoman sus papeles en esta secuela de las películas de 'Karate Kid' nominada al Emmy.</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/16.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">Sonic Mania</h5>
+                          <p class="card-text">Esta nueva entrega de la franquicia Sonic hace un tributo a lo retro, ya que verás que está diseñado con un estilo visual
+                            que recuerda la...</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="card">
+                        <img class="card-img-top" src="static/19.jpg" alt="">
+                        <div class="card-body pt-4">
+                          <h5 class="card-title">Fifa 22</h5>
+                          <p class="card-text">Una mejor temporada que alcanza solo para media tabla. Hay varias cosas en esta vida que llegan aunque no las pidas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a-->
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--FOOTER-->
+      <div class="jumbotron text-center footer" style="margin-bottom:0; margin-top: 100px;">
+        <div class="container">
+         <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="logo px-2">Gamestalgic</p>
+           </div>
+           <div class="col-lg-12 text-center footer-social">
+            <a href="" data-toggle="tooltip" title="Visítanos!" class="px-2"><i class="fab fa-whatsapp"></i></a>
+            <a href="" data-toggle="tooltip" title="Visítanos!" class="px-2"><i class="fab fa-instagram"></i></a>
+            <a href="" data-toggle="tooltip" title="Visítanos!" class="px-2"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          <div class="col-lg-12 text-center">
+           <p class="py-4"><strong>Gamestalgic© </strong> Todos los Derechos Reservados</p>
+          </div>
+       </div>
+     </div>
+  </div>
+</body>
+</html>

@@ -8,8 +8,25 @@ a{
   text-decoration: none;
 }
 
-.container{
-  max-width: 1600px !important;
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Play', sans-serif;
+  Color: #ffffff;
+}
+
+hr{
+  border-top: 1px solid rgba(255,255,100,.2) !important;
 }
 
 /**********************MENUS******************************/
@@ -160,6 +177,14 @@ a{
  padding: 32px ;
 }
 
+.banner-noticia{
+  background-image: url(../static/20.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
 .bottom-text{
   position: absolute !important;
   bottom: 10% !important;
@@ -192,12 +217,19 @@ a{
   margin-bottom: 40px;
 }
 
+.news-title{
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
 /********************************CARD*****************************/
 .card {
   width: 100%;
   /*background: rgb(70,0,148);*/
   background: linear-gradient(135deg, rgb(56 3 116) 0%, rgb(63, 4, 173) 80%, rgb(82 24 191) 100%);
-  min-height: 480px;
+  min-height: 320px;
   border-radius: 5px;
   float: left;
   /*-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.1); */
@@ -214,6 +246,7 @@ a{
   font-size: 24px;
   margin-bottom: 20px;
   color: #ffffff;
+  min-height: 60px;
 }
 
 .card-text{
@@ -271,11 +304,14 @@ a{
 
 .media-body p {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
+  line-height: 24px;
 }
 
-
+.carousel-indicators{
+  bottom: -5% !important;
+}
 
 /*********************************FOOTER*************************/
 
